@@ -8,7 +8,7 @@
 import { DriveItem } from '@microsoft/microsoft-graph-types';
 import { customElement, html, property, TemplateResult } from 'lit-element';
 import { styles } from './mgt-file-css';
-import { MgtTemplatedComponent, Providers, ProviderState } from '@vonrehberg/mgt-element';
+import { MgtTemplatedComponent, Providers, ProviderState } from '@vonrehberg.consulting/mgt-element';
 import {
   getDriveItemById,
   getDriveItemByPath,

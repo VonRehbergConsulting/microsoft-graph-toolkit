@@ -106,8 +106,8 @@ for (const wrapper of wrappers) {
   output += `\nexport const ${wrapper.className} = wrapMgt<${wrapper.propsType}>('${wrapper.tag}');\n`;
 }
 
-output = `import { ${Array.from(mgtComponentImports).join(',')} } from '@vonrehberg/mgt-components';
-import { ${Array.from(mgtElementImports).join(',')} } from '@vonrehberg/mgt-element';
+output = `import { ${Array.from(mgtComponentImports).join(',')} } from '@vonrehberg.consulting/mgt-components';
+import { ${Array.from(mgtElementImports).join(',')} } from '@vonrehberg.consulting/mgt-element';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import * as MicrosoftGraphBeta from '@microsoft/microsoft-graph-types-beta';
 import {wrapMgt} from '../Mgt';

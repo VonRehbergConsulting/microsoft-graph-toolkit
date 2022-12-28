@@ -6,7 +6,7 @@
  */
 
 import { customElement, property } from 'lit-element';
-import { Providers, MgtBaseProvider } from '@vonrehberg/mgt-element';
+import { Providers, MgtBaseProvider } from '@vonrehberg.consulting/mgt-element';
 import { ProxyProvider } from './ProxyProvider';
 
 /**

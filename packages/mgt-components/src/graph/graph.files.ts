@@ -5,7 +5,14 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { CacheItem, CacheService, CacheStore, GraphPageIterator, IGraph, prepScopes } from '@vonrehberg/mgt-element';
+import {
+  CacheItem,
+  CacheService,
+  CacheStore,
+  GraphPageIterator,
+  IGraph,
+  prepScopes
+} from '@vonrehberg.consulting/mgt-element';
 import { DriveItem, UploadSession } from '@microsoft/microsoft-graph-types';
 import { schemas } from './cacheStores';
 import { ResponseType } from '@microsoft/microsoft-graph-client';

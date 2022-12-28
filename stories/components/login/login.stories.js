@@ -86,7 +86,7 @@ export const Events = () => html`
 export const localization = () => html`
   <mgt-login></mgt-login>
   <script>
-  import { LocalizationHelper } from '@vonrehberg/mgt';
+  import { LocalizationHelper } from '@vonrehberg.consulting/mgt';
   LocalizationHelper.strings = {
     _components: {
       login: {

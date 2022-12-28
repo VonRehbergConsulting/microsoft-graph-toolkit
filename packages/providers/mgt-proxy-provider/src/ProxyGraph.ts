@@ -13,9 +13,9 @@ import {
   RetryHandlerOptions,
   TelemetryHandler
 } from '@microsoft/microsoft-graph-client';
-import { Graph, chainMiddleware } from '@vonrehberg/mgt-element';
-import { SdkVersionMiddleware } from '@vonrehberg/mgt-element/dist/es6/utils/SdkVersionMiddleware';
-import { PACKAGE_VERSION } from '@vonrehberg/mgt-element/dist/es6/utils/version';
+import { Graph, chainMiddleware } from '@vonrehberg.consulting/mgt-element';
+import { SdkVersionMiddleware } from '@vonrehberg.consulting/mgt-element/dist/es6/utils/SdkVersionMiddleware';
+import { PACKAGE_VERSION } from '@vonrehberg.consulting/mgt-element/dist/es6/utils/version';
 import { CustomHeaderMiddleware } from './CustomHeaderMiddleware';
 
 /**

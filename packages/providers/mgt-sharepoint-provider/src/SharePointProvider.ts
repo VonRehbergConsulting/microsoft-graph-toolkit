@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IProvider, ProviderState, createFromProvider } from '@vonrehberg/mgt-element';
+import { IProvider, ProviderState, createFromProvider } from '@vonrehberg.consulting/mgt-element';
 
 /**
  * AadTokenProvider

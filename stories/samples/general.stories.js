@@ -28,7 +28,7 @@ export const Localization = () => html`
   <mgt-people></mgt-people>
   <mgt-todo></mgt-todo>
   <script>
-    import { LocalizationHelper } from '@vonrehberg/mgt';
+    import { LocalizationHelper } from '@vonrehberg.consulting/mgt';
     LocalizationHelper.strings = {
       _components: {
         login: {
@@ -122,7 +122,7 @@ export const cache = () => html`
     }
   </style>
   <script>
-    import { CacheService } from '@vonrehberg/mgt';
+    import { CacheService } from '@vonrehberg.consulting/mgt';
     CacheService.config.isEnabled = true;
 
     let clearCacheButton = document.getElementById('ClearCacheButton');

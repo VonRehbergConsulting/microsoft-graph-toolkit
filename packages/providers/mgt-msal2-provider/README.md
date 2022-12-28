@@ -1,10 +1,10 @@
 # Microsoft Graph Toolkit MSAL 2.0 Provider
 
-[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-msal2-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-msal2-provider)
+[![npm](https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal2-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-msal2-provider)
 
 The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection of authentication providers and UI components powered by Microsoft Graph. 
 
-The `@vonrehberg/mgt-msal2-provider` package exposes the `Msal2Provider` class which uses [msal-browser](https://www.npmjs.com/package/@azure/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The `@vonrehberg.consulting/mgt-msal2-provider` package exposes the `Msal2Provider` class which uses [msal-browser](https://www.npmjs.com/package/@azure/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
 
 
 ## Usage
@@ -12,14 +12,14 @@ The `@vonrehberg/mgt-msal2-provider` package exposes the `Msal2Provider` class w
 1. Install the packages
 
     ```bash
-    npm install @vonrehberg/mgt-element @vonrehberg/mgt-msal2-provider
+    npm install @vonrehberg.consulting/mgt-element @vonrehberg.consulting/mgt-msal2-provider
     ```
 
 2. Initialize the provider in code with `Msal2Config`
 
     ```ts
-    import {Providers, LoginType} from '@vonrehberg/mgt-element';
-    import {Msal2Provider, PromptType} from '@vonrehberg/mgt-msal2-provider';
+    import {Providers, LoginType} from '@vonrehberg.consulting/mgt-element';
+    import {Msal2Provider, PromptType} from '@vonrehberg.consulting/mgt-msal2-provider';
 
     // initialize the auth provider globally
     Providers.globalProvider = new Msal2Provider({
@@ -40,8 +40,8 @@ The `@vonrehberg/mgt-msal2-provider` package exposes the `Msal2Provider` class w
 3. Initialize the provider in code with `Msal2PublicClientApplicationConfig` if a `PublicClientApplication` is already instantiated. For example, `msal-angular` instantiates `PublicClientApplication` on startup.
 
     ```ts
-    import {Providers, LoginType} from '@vonrehberg/mgt-element';
-    import {Msal2Provider, PromptType} from '@vonrehberg/mgt-msal2-provider';
+    import {Providers, LoginType} from '@vonrehberg.consulting/mgt-element';
+    import {Msal2Provider, PromptType} from '@vonrehberg.consulting/mgt-msal2-provider';
     import {PublicClientApplication} from '@azure/msal-browser';
 
     // initialize the auth provider globally
@@ -63,7 +63,7 @@ The `@vonrehberg/mgt-msal2-provider` package exposes the `Msal2Provider` class w
 4. Alternatively, initialize the provider in html (only `client-id` is required):
 
     ```html
-    <script type="module" src="../node_modules/@vonrehberg/mgt-msal2-provider/dist/es6/index.js" />
+    <script type="module" src="../node_modules/@vonrehberg.consulting/mgt-msal2-provider/dist/es6/index.js" />
 
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
                       login-type="redirect/popup" 

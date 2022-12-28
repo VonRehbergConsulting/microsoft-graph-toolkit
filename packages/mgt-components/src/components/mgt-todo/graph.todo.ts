@@ -6,7 +6,7 @@
  */
 
 import { DateTimeTimeZone, ItemBody, PatternedRecurrence } from '@microsoft/microsoft-graph-types';
-import { IGraph, prepScopes } from '@vonrehberg/mgt-element';
+import { IGraph, prepScopes } from '@vonrehberg.consulting/mgt-element';
 
 // tslint:disable
 export interface LinkedResource {

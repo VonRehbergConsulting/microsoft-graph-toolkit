@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { prepScopes, Providers } from '@vonrehberg/mgt';
+import { prepScopes, Providers } from '@vonrehberg.consulting/mgt';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 

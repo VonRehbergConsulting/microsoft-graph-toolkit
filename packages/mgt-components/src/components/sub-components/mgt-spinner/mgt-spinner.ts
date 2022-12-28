@@ -6,7 +6,7 @@
  */
 
 import { customElement, html } from 'lit-element';
-import { MgtBaseComponent } from '@vonrehberg/mgt-element';
+import { MgtBaseComponent } from '@vonrehberg.consulting/mgt-element';
 import { styles } from './mgt-spinner-css';
 
 /**

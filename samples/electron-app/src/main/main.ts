@@ -4,7 +4,7 @@ import {
   ElectronAuthenticator,
   SimpleCachePlugin,
   MsalElectronConfig
-} from '@vonrehberg/mgt-electron-provider/dist/Authenticator';
+} from '@vonrehberg.consulting/mgt-electron-provider/dist/Authenticator';
 export default class Main {
   static application: Electron.App;
   public static mainWindow: Electron.BrowserWindow;

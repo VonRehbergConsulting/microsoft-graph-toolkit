@@ -9,7 +9,7 @@ import { customElement, html, property, PropertyValues, TemplateResult } from 'l
 import { classMap } from 'lit-html/directives/class-map';
 import { getSegmentAwareWindow, isWindowSegmentAware, IWindowSegment } from '../../../utils/WindowSegmentHelpers';
 import { styles } from './mgt-flyout-css';
-import { MgtBaseComponent } from '@vonrehberg/mgt-element/';
+import { MgtBaseComponent } from '@vonrehberg.consulting/mgt-element/';
 
 /**
  * A component to create flyout anchored to an element

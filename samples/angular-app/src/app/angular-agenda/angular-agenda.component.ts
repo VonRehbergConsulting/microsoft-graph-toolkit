@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { MgtAgenda } from '@vonrehberg/mgt';
+import { MgtAgenda } from '@vonrehberg.consulting/mgt';
 
 @Component({
   selector: 'app-angular-agenda',

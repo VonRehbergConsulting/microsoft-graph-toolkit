@@ -40,7 +40,7 @@ export const RTL = () => html`
 export const localization = () => html`
   <mgt-person-card person-query="me"></mgt-person-card>
   <script>
-  import { LocalizationHelper } from '@vonrehberg/mgt';
+  import { LocalizationHelper } from '@vonrehberg.consulting/mgt';
   LocalizationHelper.strings = {
     _components: {
       login: {

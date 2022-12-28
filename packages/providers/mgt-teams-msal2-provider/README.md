@@ -1,8 +1,8 @@
 # Microsoft Graph Toolkit Microsoft Teams Msal2 Provider
 
-[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-teams-msal2-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-teams-msal2-provider)
+[![npm](https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teams-msal2-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-teams-msal2-provider)
 
-The `@vonrehberg/mgt-teams-msal2-provider` package exposes the `TeamsMsal2Provider` class to be used inside your Microsoft Teams tab applications to authenticate users, to call Microsoft Graph, and to power the Microsoft Graph Toolkit components. The provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) and supports both the interactive sign in flow on the client and Single Sign-On (SSO) flow via your own backend. SSO mode is enabled by setting `ssoUrl` \ `sso-url` and requires a backend service to handle the on-behalf-of flow.
+The `@vonrehberg.consulting/mgt-teams-msal2-provider` package exposes the `TeamsMsal2Provider` class to be used inside your Microsoft Teams tab applications to authenticate users, to call Microsoft Graph, and to power the Microsoft Graph Toolkit components. The provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) and supports both the interactive sign in flow on the client and Single Sign-On (SSO) flow via your own backend. SSO mode is enabled by setting `ssoUrl` \ `sso-url` and requires a backend service to handle the on-behalf-of flow.
 
 [See the full documentation of the TeamsMsal2Provider](https://learn.microsoft.com/graph/toolkit/providers/teams-msal2)
 
@@ -15,14 +15,14 @@ The TeamsMsal2Provider requires the usage of the Microsoft Teams SDK which is no
 1. Install the packages
 
     ```bash
-    npm install @microsoft/teams-js @vonrehberg/mgt-element @vonrehberg/mgt-teams-msal2-provider
+    npm install @microsoft/teams-js @vonrehberg.consulting/mgt-element @vonrehberg.consulting/mgt-teams-msal2-provider
     ```
 
 1. Before initializing the provider, create a new page in your application (ex: https://mydomain.com/auth) that will handle the auth redirect. Call the `handleAuth` function to handle all client side auth or permission consent.
 
     ```ts
     import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-    import {TeamsMsal2Provider} from '@vonrehberg/mgt-teams-msal2-provider';
+    import {TeamsMsal2Provider} from '@vonrehberg.consulting/mgt-teams-msal2-provider';
 
     TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
     TeamsMsal2Provider.handleAuth();
@@ -31,8 +31,8 @@ The TeamsMsal2Provider requires the usage of the Microsoft Teams SDK which is no
 3. Initialize the provider in your main code (not on your auth page). The provider can be used in "client side auth" mode or SSO mode. SSO mode is enabled by setting `ssoUrl` \ `sso-url` and requires a backend service to handle the on-behalf-of flow.
 
     ```ts
-    import {Providers} from '@vonrehberg/mgt-element';
-    import {TeamsMsal2Provider} from '@vonrehberg/mgt-teams-msal2-provider';
+    import {Providers} from '@vonrehberg.consulting/mgt-element';
+    import {TeamsMsal2Provider} from '@vonrehberg.consulting/mgt-teams-msal2-provider';
     import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
 
     TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
@@ -51,7 +51,7 @@ The TeamsMsal2Provider requires the usage of the Microsoft Teams SDK which is no
 3. Alternatively, initialize the provider in html (only `client-id` and `auth-popup-url` is required):
 
     ```html
-    <script type="module" src="../node_modules/@vonrehberg/mgt-teams-provider/dist/es6/index.js" />
+    <script type="module" src="../node_modules/@vonrehberg.consulting/mgt-teams-provider/dist/es6/index.js" />
 
     <mgt-teams-msal2-provider client-id="<YOUR_CLIENT_ID>"
                         auth-popup-url="/AUTH-PATH"

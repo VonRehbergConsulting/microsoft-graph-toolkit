@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { BatchResponse, IBatch, IGraph } from '@vonrehberg/mgt-element';
+import { BatchResponse, IBatch, IGraph } from '@vonrehberg.consulting/mgt-element';
 import { Profile } from '@microsoft/microsoft-graph-types-beta';
 
 import { getEmailFromGraphEntity } from '../../graph/graph.people';

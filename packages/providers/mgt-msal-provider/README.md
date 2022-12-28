@@ -1,12 +1,12 @@
 # Microsoft Graph Toolkit MSAL Provider
 
-[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-msal-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-msal-provider)
+[![npm](https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-msal-provider)
 
-⚠️⚠️⚠️ This package is no longer receiving new features and will only receive critical bug and security fixes. All new applications should use [`@vonrehberg/mgt-msal2-provider`](https://learn.microsoft.com/graph/toolkit/providers/msal2) instead. ⚠️⚠️⚠️
+⚠️⚠️⚠️ This package is no longer receiving new features and will only receive critical bug and security fixes. All new applications should use [`@vonrehberg.consulting/mgt-msal2-provider`](https://learn.microsoft.com/graph/toolkit/providers/msal2) instead. ⚠️⚠️⚠️
 
-The `@vonrehberg/mgt-msal-provider` package exposes the `MsalProvider` class which uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph via the Implicit Grant Flow.
+The `@vonrehberg.consulting/mgt-msal-provider` package exposes the `MsalProvider` class which uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph via the Implicit Grant Flow.
 
-For authentication based on the more secure OAuth 2.0 Authorization Code Flow with PKCE, please use the [`@vonrehberg/mgt-msal2-provider`](https://learn.microsoft.com/graph/toolkit/providers/msal2) instead.
+For authentication based on the more secure OAuth 2.0 Authorization Code Flow with PKCE, please use the [`@vonrehberg.consulting/mgt-msal2-provider`](https://learn.microsoft.com/graph/toolkit/providers/msal2) instead.
 
 [See docs for full documentation of the MsalProvider](https://learn.microsoft.com/graph/toolkit/providers/msal)
 
@@ -17,14 +17,14 @@ The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection 
 1. Install the packages
 
     ```bash
-    npm install @vonrehberg/mgt-element @vonrehberg/mgt-msal-provider
+    npm install @vonrehberg.consulting/mgt-element @vonrehberg.consulting/mgt-msal-provider
     ```
 
 2. Initialize the provider in code
 
     ```ts
-    import {Providers} from '@vonrehberg/mgt-element';
-    import {MsalProvider} from '@vonrehberg/mgt-msal-provider';
+    import {Providers} from '@vonrehberg.consulting/mgt-element';
+    import {MsalProvider} from '@vonrehberg.consulting/mgt-msal-provider';
 
     // initialize the auth provider globally
     Providers.globalProvider = new MsalProvider({
@@ -41,7 +41,7 @@ The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection 
 3. Alternatively, initialize the provider in html (only `client-id` is required):
 
     ```html
-    <script type="module" src="../node_modules/@vonrehberg/mgt-msal-provider/dist/es6/index.js" />
+    <script type="module" src="../node_modules/@vonrehberg.consulting/mgt-msal-provider/dist/es6/index.js" />
 
     <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
                       login-type="redirect/popup" 

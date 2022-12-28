@@ -7,7 +7,7 @@
 
 import { customElement, html, internalProperty, property, TemplateResult } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { MgtTemplatedComponent, Providers, ProviderState, TeamsHelper } from '@vonrehberg/mgt-element';
+import { MgtTemplatedComponent, Providers, ProviderState, TeamsHelper } from '@vonrehberg.consulting/mgt-element';
 import { Presence, User, Person } from '@microsoft/microsoft-graph-types';
 
 import { findPeople, getEmailFromGraphEntity } from '../../graph/graph.people';

@@ -1,10 +1,10 @@
 # Microsoft Graph Toolkit Web Components
 
-[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-components?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-components)
+[![npm](https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-components?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-components)
 
 The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) web components package is a collection of web components powered by Microsoft Graph. The components are functional, work automatically with Microsoft Graph, and work with any web framework and on all modern browsers.
 
-> Note: If you are building with React, you might find `@vonrehberg/mgt-react` useful as well.
+> Note: If you are building with React, you might find `@vonrehberg.consulting/mgt-react` useful as well.
 
 [See docs for full documentation](https://aka.ms/mgt-docs)
 
@@ -33,18 +33,18 @@ The components can be used on their own, but they are at their best when they ar
 1. Install the packages
 
     ```bash
-    npm install @vonrehberg/mgt-element @vonrehberg/mgt-components @vonrehberg/mgt-msal-provider
+    npm install @vonrehberg.consulting/mgt-element @vonrehberg.consulting/mgt-components @vonrehberg.consulting/mgt-msal-provider
     ```
 
 1. Use components in your code
 
     ```html
     <script type="module">
-      import {Providers} from '@vonrehberg/mgt-element';
-      import {MsalProvider} from '@vonrehberg/mgt-msal-provider';
+      import {Providers} from '@vonrehberg.consulting/mgt-element';
+      import {MsalProvider} from '@vonrehberg.consulting/mgt-msal-provider';
 
       // import the components
-      import '@vonrehberg/mgt-components';
+      import '@vonrehberg.consulting/mgt-components';
 
       // initialize the auth provider globally
       Providers.globalProvider = new MsalProvider({clientId: 'clientId'});

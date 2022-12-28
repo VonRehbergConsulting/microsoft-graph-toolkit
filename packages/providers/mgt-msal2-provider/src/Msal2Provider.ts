@@ -12,7 +12,7 @@ import {
   createFromProvider,
   Providers,
   IProviderAccount
-} from '@vonrehberg/mgt-element';
+} from '@vonrehberg.consulting/mgt-element';
 import {
   Configuration,
   PublicClientApplication,

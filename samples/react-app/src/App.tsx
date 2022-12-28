@@ -8,9 +8,9 @@ import {
   PersonType,
   MgtTemplateProps,
   Get
-} from '@vonrehberg/mgt-react';
+} from '@vonrehberg.consulting/mgt-react';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
-import { MgtPerson } from '@vonrehberg/mgt-components';
+import { MgtPerson } from '@vonrehberg.consulting/mgt-components';
 
 class App extends Component {
   handleTemplateRendered = (e: Event) => {

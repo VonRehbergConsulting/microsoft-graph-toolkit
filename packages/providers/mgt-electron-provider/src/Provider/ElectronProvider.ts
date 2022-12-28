@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IProvider, Providers, ProviderState, createFromProvider } from '@vonrehberg/mgt-element';
+import { IProvider, Providers, ProviderState, createFromProvider } from '@vonrehberg.consulting/mgt-element';
 import { AuthenticationProviderOptions } from '@microsoft/microsoft-graph-client/lib/es/IAuthenticationProviderOptions';
 import { ipcRenderer } from 'electron';
 

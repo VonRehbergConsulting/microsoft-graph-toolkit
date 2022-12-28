@@ -53,7 +53,7 @@ export const selectUsersById = () => html`
 export const localization = () => html`
    <mgt-people-picker></mgt-people-picker>
    <script>
-   import { LocalizationHelper } from '@vonrehberg/mgt';
+   import { LocalizationHelper } from '@vonrehberg.consulting/mgt';
    LocalizationHelper.strings = {
      _components: {
        'people-picker': {

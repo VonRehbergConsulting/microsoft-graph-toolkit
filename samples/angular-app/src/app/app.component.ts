@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { MsalBroadcastService, MsalGuardAuthRequest, MsalService } from '@azure/msal-angular';
 import { InteractionStatus, PublicClientApplication } from '@azure/msal-browser';
-import { Msal2Provider, Providers, ProviderState, TemplateHelper } from '@vonrehberg/mgt';
+import { Msal2Provider, Providers, ProviderState, TemplateHelper } from '@vonrehberg.consulting/mgt';
 import { filter, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { MsalGuardConfig, MsalConfig } from '../environments/environment.msal';

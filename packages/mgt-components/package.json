@@ -1,5 +1,5 @@
 {
-  "name": "@vonrehberg/mgt-components",
+  "name": "@vonrehberg.consulting/mgt-components",
   "version": "2.0.1",
   "description": "The Microsoft Graph Toolkit Components",
   "keywords": [
@@ -36,7 +36,7 @@
     "sass:watch": "gulp watchSass --cwd ."
   },
   "dependencies": {
-    "@vonrehberg/mgt-element": "*",
+    "@vonrehberg.consulting/mgt-element": "*",
     "@microsoft/microsoft-graph-client": "^2.2.1",
     "@microsoft/microsoft-graph-types": "^2.0.0",
     "@microsoft/microsoft-graph-types-beta": "^0.16.0-preview",

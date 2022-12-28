@@ -1,5 +1,5 @@
 {
-  "name": "@vonrehberg/mgt-react",
+  "name": "@vonrehberg.consulting/mgt-react",
   "version": "2.0.0",
   "description": "Microsoft Graph Toolkit React wrapper class",
   "author": "Microsoft",
@@ -31,8 +31,8 @@
     "generate": "wca analyze ../mgt-components/src --format json --outFile temp/web-components.json && node ./scripts/generate.js"
   },
   "dependencies": {
-    "@vonrehberg/mgt-components": "*",
-    "@vonrehberg/mgt-element": "*",
+    "@vonrehberg.consulting/mgt-components": "*",
+    "@vonrehberg.consulting/mgt-element": "*",
     "@microsoft/microsoft-graph-types": "^2.0.0",
     "@microsoft/microsoft-graph-types-beta": "^0.16.0-preview",
     "wc-react": "^0.5.0"

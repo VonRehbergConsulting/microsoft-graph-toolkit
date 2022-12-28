@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { MgtTemplatedComponent } from '@vonrehberg/mgt-element';
+import { MgtTemplatedComponent } from '@vonrehberg.consulting/mgt-element';
 import { html, property, TemplateResult } from 'lit-element';
 
 import { IDynamicPerson } from '../../../graph/types';

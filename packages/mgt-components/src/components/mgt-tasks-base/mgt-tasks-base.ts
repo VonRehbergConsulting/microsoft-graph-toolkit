@@ -7,7 +7,12 @@
 
 import { html, property, TemplateResult } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { ComponentMediaQuery, Providers, ProviderState, MgtTemplatedComponent } from '@vonrehberg/mgt-element';
+import {
+  ComponentMediaQuery,
+  Providers,
+  ProviderState,
+  MgtTemplatedComponent
+} from '@vonrehberg.consulting/mgt-element';
 import { strings } from './strings';
 
 /**

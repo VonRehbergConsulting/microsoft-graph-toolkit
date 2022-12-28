@@ -10,7 +10,7 @@ import { styles } from './mgt-file-upload-css';
 import { strings } from './strings';
 import { getSvg, SvgIcon } from '../../../utils/SvgHelper';
 import { formatBytes } from '../../../utils/Utils';
-import { IGraph, MgtBaseComponent } from '@vonrehberg/mgt-element';
+import { IGraph, MgtBaseComponent } from '@vonrehberg.consulting/mgt-element';
 import { ViewType } from '../../../graph/types';
 import { DriveItem } from '@microsoft/microsoft-graph-types';
 import {

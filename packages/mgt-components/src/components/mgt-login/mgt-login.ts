@@ -7,7 +7,7 @@
 
 import { customElement, html, property } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { Providers, ProviderState, MgtTemplatedComponent } from '@vonrehberg/mgt-element';
+import { Providers, ProviderState, MgtTemplatedComponent } from '@vonrehberg.consulting/mgt-element';
 
 import { IDynamicPerson, ViewType } from '../../graph/types';
 import { MgtFlyout } from '../sub-components/mgt-flyout/mgt-flyout';

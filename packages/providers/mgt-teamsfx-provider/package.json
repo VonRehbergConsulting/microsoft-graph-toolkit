@@ -1,5 +1,5 @@
 {
-  "name": "@vonrehberg/mgt-teamsfx-provider",
+  "name": "@vonrehberg.consulting/mgt-teamsfx-provider",
   "version": "2.0.0",
   "description": "The Microsoft Graph Toolkit TeamsFx Provider",
   "keywords": [
@@ -46,7 +46,7 @@
     "@microsoft/teamsfx": "0.6.0 - 2.x.x"
   },
   "dependencies": {
-    "@vonrehberg/mgt-element": "*"
+    "@vonrehberg.consulting/mgt-element": "*"
   },
   "publishConfig": {
     "directory": "dist"

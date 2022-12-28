@@ -1,19 +1,19 @@
 # React wrapper for Microsoft Graph Toolkit
 
-[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-react?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-react)
+[![npm](https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-react?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-react)
 
 Use `mgt-react` to simplify usage of [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) web components in React. The library wraps all mgt components and exports them as React components.
 
 ## Installation
 
 ```bash
-npm install @vonrehberg/mgt-react
+npm install @vonrehberg.consulting/mgt-react
 ```
 
 or
 
 ```bash
-yarn add @vonrehberg/mgt-react
+yarn add @vonrehberg.consulting/mgt-react
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add @vonrehberg/mgt-react
 All components are available via the npm package and are named using PascalCase. To use a component, first import it at the top:
 
 ```tsx
-import { Person } from '@vonrehberg/mgt-react';
+import { Person } from '@vonrehberg.consulting/mgt-react';
 ```
 
 You can now use `Person` anywhere in your JSX as a regular React component.
@@ -47,7 +47,7 @@ const App = (props) => {
 Or, register an event handler:
 
 ```jsx
-import { PeoplePicker, People } from '@vonrehberg/mgt-react';
+import { PeoplePicker, People } from '@vonrehberg.consulting/mgt-react';
 
 const App = (props) => {
   const [people, setPeople] = useState([]);
@@ -71,7 +71,7 @@ Most Microsoft Graph Toolkit components [support templating](https://learn.micro
 For example, to create a template to be used for rendering events in the `mgt-agenda` component, first define a component to be used for rendering an event:
 
 ```tsx
-import { MgtTemplateProps } from '@vonrehberg/mgt-react';
+import { MgtTemplateProps } from '@vonrehberg.consulting/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
@@ -82,7 +82,7 @@ const MyEvent = (props: MgtTemplateProps) => {
 Then use it as a child of the wrapped component and set the template prop to `event`
 
 ```tsx
-import { Agenda } from '@vonrehberg/mgt-react';
+import { Agenda } from '@vonrehberg.consulting/mgt-react';
 
 const App = (props) => {
   return <Agenda>

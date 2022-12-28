@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IGraph, prepScopes, BetaGraph, CacheItem, CacheService, CacheStore } from '@vonrehberg/mgt-element';
+import { IGraph, prepScopes, BetaGraph, CacheItem, CacheService, CacheStore } from '@vonrehberg.consulting/mgt-element';
 import { Presence } from '@microsoft/microsoft-graph-types';
 import { schemas } from './cacheStores';
 import { IDynamicPerson } from './types';

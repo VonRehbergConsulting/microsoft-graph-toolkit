@@ -9,8 +9,8 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@vonrehberg/mgt-react": "*",
-    "@vonrehberg/mgt-spfx": "*",
+    "@vonrehberg.consulting/mgt-react": "*",
+    "@vonrehberg.consulting/mgt-spfx": "*",
     "@microsoft/sp-core-library": "1.15.2",
     "@microsoft/sp-lodash-subset": "1.15.2",
     "@microsoft/sp-office-ui-fabric-core": "1.15.2",

@@ -1,5 +1,5 @@
 {
-  "name": "@vonrehberg/mgt",
+  "name": "@vonrehberg.consulting/mgt",
   "version": "2.0.0",
   "description": "The Microsoft Graph Toolkit",
   "keywords": [
@@ -43,14 +43,14 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@vonrehberg/mgt-element": "*",
-    "@vonrehberg/mgt-components": "*",
-    "@vonrehberg/mgt-msal-provider": "*",
-    "@vonrehberg/mgt-teams-provider": "*",
-    "@vonrehberg/mgt-proxy-provider": "*",
-    "@vonrehberg/mgt-sharepoint-provider": "*",
-    "@vonrehberg/mgt-msal2-provider": "*",
-    "@vonrehberg/mgt-teams-msal2-provider": "*"
+    "@vonrehberg.consulting/mgt-element": "*",
+    "@vonrehberg.consulting/mgt-components": "*",
+    "@vonrehberg.consulting/mgt-msal-provider": "*",
+    "@vonrehberg.consulting/mgt-teams-provider": "*",
+    "@vonrehberg.consulting/mgt-proxy-provider": "*",
+    "@vonrehberg.consulting/mgt-sharepoint-provider": "*",
+    "@vonrehberg.consulting/mgt-msal2-provider": "*",
+    "@vonrehberg.consulting/mgt-teams-msal2-provider": "*"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.5.0"

@@ -1,5 +1,5 @@
 {
-  "name": "@vonrehberg/mgt-proxy-provider",
+  "name": "@vonrehberg.consulting/mgt-proxy-provider",
   "version": "2.0.0",
   "description": "The Microsoft Graph Toolkit Proxy Provider",
   "keywords": [
@@ -37,7 +37,7 @@
     "postpack": "cpx *.tgz ../../../artifacts"
   },
   "dependencies": {
-    "@vonrehberg/mgt-element": "*",
+    "@vonrehberg.consulting/mgt-element": "*",
     "@microsoft/microsoft-graph-client": "^2.2.1"
   },
   "publishConfig": {

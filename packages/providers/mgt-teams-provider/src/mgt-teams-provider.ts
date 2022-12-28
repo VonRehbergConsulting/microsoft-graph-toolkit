@@ -7,7 +7,7 @@
 
 import { customElement, property } from 'lit-element';
 import { Configuration } from 'msal';
-import { Providers, MgtBaseProvider } from '@vonrehberg/mgt-element';
+import { Providers, MgtBaseProvider } from '@vonrehberg.consulting/mgt-element';
 import { TeamsConfig, TeamsProvider } from './TeamsProvider';
 
 /**

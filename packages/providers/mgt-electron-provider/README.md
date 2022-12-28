@@ -1,7 +1,7 @@
 # Microsoft Graph Toolkit Electron Provider
 The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection of authentication providers and UI components powered by Microsoft Graph. 
 
-The `@vonrehberg/mgt-electron-provider` package exposes the `ElectronAuthenticator` and `ElectronProvider` classes which use [MSAL node](https://www.npmjs.com/package/@azure/msal-node) to sign in users and acquire tokens to use with Microsoft Graph.
+The `@vonrehberg.consulting/mgt-electron-provider` package exposes the `ElectronAuthenticator` and `ElectronProvider` classes which use [MSAL node](https://www.npmjs.com/package/@azure/msal-node) to sign in users and acquire tokens to use with Microsoft Graph.
 
 
 ## Usage
@@ -9,14 +9,14 @@ The `@vonrehberg/mgt-electron-provider` package exposes the `ElectronAuthenticat
 1. Install the packages
 
     ```bash
-    npm install @vonrehberg/mgt-element @vonrehberg/mgt-electron-provider
+    npm install @vonrehberg.consulting/mgt-element @vonrehberg.consulting/mgt-electron-provider
     ```
 
 2. Initialize the provider in your renderer process (Front end, eg. renderer.ts)
 
     ```ts
-    import {Providers} from '@vonrehberg/mgt-element';
-    import {ElectronProvider} from '@vonrehberg/mgt-electron-provider/dist/Provider';
+    import {Providers} from '@vonrehberg.consulting/mgt-element';
+    import {ElectronProvider} from '@vonrehberg.consulting/mgt-electron-provider/dist/Provider';
 
     // initialize the auth provider globally
     Providers.globalProvider = new ElectronProvider();
@@ -25,7 +25,7 @@ The `@vonrehberg/mgt-electron-provider` package exposes the `ElectronAuthenticat
 3. Initialize ElectronAuthenticator in Main.ts (Back end)
 
     ```ts
-    import { ElectronAuthenticator, MsalElectronConfig } from '@vonrehberg/mgt-electron-provider/dist/Authenticator'; 
+    import { ElectronAuthenticator, MsalElectronConfig } from '@vonrehberg.consulting/mgt-electron-provider/dist/Authenticator'; 
     ...
     let mainWindow =  new BrowserWindow({
       width: 800,

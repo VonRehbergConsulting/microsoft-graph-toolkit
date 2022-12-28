@@ -27,7 +27,7 @@ export const RTL = () => html`
 export const localization = () => html`
   <mgt-file-list></mgt-file-list>
   <script>
-  import { LocalizationHelper } from '@vonrehberg/mgt';
+  import { LocalizationHelper } from '@vonrehberg.consulting/mgt';
   LocalizationHelper.strings = {
     _components: {
       'file-list': {

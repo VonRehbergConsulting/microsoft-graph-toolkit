@@ -10,7 +10,12 @@ import { Contact, OutlookTask, OutlookTaskFolder } from '@microsoft/microsoft-gr
 import { customElement, html, property } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { repeat } from 'lit-html/directives/repeat';
-import { ComponentMediaQuery, Providers, ProviderState, MgtTemplatedComponent } from '@vonrehberg/mgt-element';
+import {
+  ComponentMediaQuery,
+  Providers,
+  ProviderState,
+  MgtTemplatedComponent
+} from '@vonrehberg.consulting/mgt-element';
 import { getShortDateString } from '../../utils/Utils';
 import { MgtPeoplePicker } from '../mgt-people-picker/mgt-people-picker';
 import { PersonCardInteraction } from './../PersonCardInteraction';

@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@vonrehberg/mgt-element';
+import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@vonrehberg.consulting/mgt-element';
 import { Group } from '@microsoft/microsoft-graph-types';
 import { schemas } from './cacheStores';
 

@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/microsoftgraph/msgraph-sdk-javascript"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"></a> <a href="https://stackoverflow.com/questions/tagged/microsoft-graph-toolkit"><img src="https://img.shields.io/stackexchange/stackoverflow/t/microsoft-graph-toolkit.svg"></a>
-  <img src="https://github.com/microsoftgraph/microsoft-graph-toolkit/workflows/Build%20CI/badge.svg" /> <a href="https://www.webcomponents.org/element/@vonrehberg/mgt"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg"></a> <a href="https://mgt.dev"><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg"></a> <a href="https://github.com/microsoftgraph/microsoft-graph-toolkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/microsoftgraph/microsoft-graph-toolkit/good%20first%20issue?color=brightgreen"></a>
+  <img src="https://github.com/microsoftgraph/microsoft-graph-toolkit/workflows/Build%20CI/badge.svg" /> <a href="https://www.webcomponents.org/element/@vonrehberg.consulting/mgt"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg"></a> <a href="https://mgt.dev"><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg"></a> <a href="https://github.com/microsoftgraph/microsoft-graph-toolkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/microsoftgraph/microsoft-graph-toolkit/good%20first%20issue?color=brightgreen"></a>
 </p>
 
 <h3 align="center"><a href="https://aka.ms/mgt-docs">Documentation</a></h3>
@@ -25,19 +25,19 @@
 
 | Package                                                                                                    | Latest                                                                                  | Next                                                                                  |
 | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [`@vonrehberg/mgt`](https://www.npmjs.com/package/@vonrehberg/mgt)                                           | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt/latest.svg">                      | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt/next.svg">                      |
-| [`@vonrehberg/mgt-element`](https://www.npmjs.com/package/@vonrehberg/mgt-element)                           | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-element/latest.svg">              | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-element/next.svg">              |
-| [`@vonrehberg/mgt-components`](https://www.npmjs.com/package/@vonrehberg/mgt-components)                     | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-components/latest.svg">           | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-components/next.svg">           |
-| [`@vonrehberg/mgt-react`](https://www.npmjs.com/package/@vonrehberg/mgt-react)                               | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-react/latest.svg">                | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-react/next.svg">                |
-| [`@vonrehberg/mgt-msal-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-msal-provider)               | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-msal-provider/latest.svg">        | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-msal-provider/next.svg">        |
-| [`@vonrehberg/mgt-msal2-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-msal2-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-msal2-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-msal2-provider/next.svg">       |
-| [`@vonrehberg/mgt-teams-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-teams-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teams-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teams-provider/next.svg">       |
-| [`@vonrehberg/mgt-teams-msal2-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-teams-msal2-provider) | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teams-msal2-provider/latest.svg"> | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teams-msal2-provider/next.svg"> |
-| [`@vonrehberg/mgt-teamsfx-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-teamsfx-provider)         | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teamsfx-provider/latest.svg">     | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-teamsfx-provider/next.svg">     |
-| [`@vonrehberg/mgt-sharepoint-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-sharepoint-provider)   | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-sharepoint-provider/latest.svg">  | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-sharepoint-provider/next.svg">  |
-| [`@vonrehberg/mgt-proxy-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-proxy-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-proxy-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-proxy-provider/next.svg">       |
-| [`@vonrehberg/mgt-spfx`](https://www.npmjs.com/package/@vonrehberg/mgt-spfx)                                 | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-spfx/latest.svg">                 | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-spfx/next.svg">                 |
-| [`@vonrehberg/mgt-electron-provider`](https://www.npmjs.com/package/@vonrehberg/mgt-electron-provider)       | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-electron-provider/latest.svg">    | <img src="https://img.shields.io/npm/v/@vonrehberg/mgt-electron-provider/next.svg">    |
+| [`@vonrehberg.consulting/mgt`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt)                                           | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt/latest.svg">                      | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt/next.svg">                      |
+| [`@vonrehberg.consulting/mgt-element`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-element)                           | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-element/latest.svg">              | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-element/next.svg">              |
+| [`@vonrehberg.consulting/mgt-components`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-components)                     | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-components/latest.svg">           | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-components/next.svg">           |
+| [`@vonrehberg.consulting/mgt-react`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-react)                               | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-react/latest.svg">                | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-react/next.svg">                |
+| [`@vonrehberg.consulting/mgt-msal-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-msal-provider)               | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal-provider/latest.svg">        | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal-provider/next.svg">        |
+| [`@vonrehberg.consulting/mgt-msal2-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-msal2-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal2-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-msal2-provider/next.svg">       |
+| [`@vonrehberg.consulting/mgt-teams-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-teams-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teams-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teams-provider/next.svg">       |
+| [`@vonrehberg.consulting/mgt-teams-msal2-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-teams-msal2-provider) | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teams-msal2-provider/latest.svg"> | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teams-msal2-provider/next.svg"> |
+| [`@vonrehberg.consulting/mgt-teamsfx-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-teamsfx-provider)         | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teamsfx-provider/latest.svg">     | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-teamsfx-provider/next.svg">     |
+| [`@vonrehberg.consulting/mgt-sharepoint-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-sharepoint-provider)   | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-sharepoint-provider/latest.svg">  | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-sharepoint-provider/next.svg">  |
+| [`@vonrehberg.consulting/mgt-proxy-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-proxy-provider)             | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-proxy-provider/latest.svg">       | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-proxy-provider/next.svg">       |
+| [`@vonrehberg.consulting/mgt-spfx`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-spfx)                                 | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-spfx/latest.svg">                 | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-spfx/next.svg">                 |
+| [`@vonrehberg.consulting/mgt-electron-provider`](https://www.npmjs.com/package/@vonrehberg.consulting/mgt-electron-provider)       | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-electron-provider/latest.svg">    | <img src="https://img.shields.io/npm/v/@vonrehberg.consulting/mgt-electron-provider/next.svg">    |
 
 ### Preview packages
 
@@ -48,7 +48,7 @@ In addition to the `@next` preview packages, we also ship packages under several
 | `next`          | Next release - updated on each commit to `main`                          |
 | `next.fluentui` | Next major release (v3) with components based on FluentUI web components |
 
-To install these packages, use the tag as the version in your `npm i` command. Ex: `npm i @vonrehberg/mgt-element@next.fluentui`. Make sure to install the same version for all mgt packages to avoid any conflicts. Keep in mind, these are features in preview and are not recommended for production use.
+To install these packages, use the tag as the version in your `npm i` command. Ex: `npm i @vonrehberg.consulting/mgt-element@next.fluentui`. Make sure to install the same version for all mgt packages to avoid any conflicts. Keep in mind, these are features in preview and are not recommended for production use.
 
 
 ## Components
@@ -70,7 +70,7 @@ The Toolkit currently includes the following components:
 * [mgt-file-list](https://learn.microsoft.com/graph/toolkit/components/file-list)
 * [mgt-get](https://learn.microsoft.com/graph/toolkit/components/get)
 
-All web components are also available as React component - see [@vonrehberg/mgt-react documentation](https://learn.microsoft.com/graph/toolkit/get-started/mgt-react).
+All web components are also available as React component - see [@vonrehberg.consulting/mgt-react documentation](https://learn.microsoft.com/graph/toolkit/get-started/mgt-react).
 
 ## Providers
 
@@ -104,15 +104,15 @@ You can use the components by referencing the loader directly (via unpkg), or in
 ### Use via mgt-loader:
 
 ```html
-<script src="https://unpkg.com/@vonrehberg/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@vonrehberg.consulting/mgt@2/dist/bundle/mgt-loader.js"></script>
 ```
 
-> NOTE: This link will load the highest available version of @vonrehberg/mgt in the range `>= 2.0.0 < 3.0.0`, omitting the `@2` fragment from the url results in loading the latest version. This could result in loading a new major version and breaking the application.
+> NOTE: This link will load the highest available version of @vonrehberg.consulting/mgt in the range `>= 2.0.0 < 3.0.0`, omitting the `@2` fragment from the url results in loading the latest version. This could result in loading a new major version and breaking the application.
 
 You can then start using the components in your html page. Here is a full working example with the Msal2 provider:
 
 ```html
-<script src="https://unpkg.com/@vonrehberg/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@vonrehberg.consulting/mgt@2/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="[CLIENT-ID]"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 
@@ -129,13 +129,13 @@ You can then start using the components in your html page. Here is a full workin
 The benefits of using MGT through NPM is that you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
 
 ```bash
-npm install @vonrehberg/mgt
+npm install @vonrehberg.consulting/mgt
 ```
 
 Now you can reference all components and providers at the page you are using:
 
 ```html
-<script type="module" src="node_modules/@vonrehberg/mgt/dist/es6/index.js"></script>
+<script type="module" src="node_modules/@vonrehberg.consulting/mgt/dist/es6/index.js"></script>
 
 <mgt-msal2-provider client-id="[CLIENT-ID]"></mgt-msal2-provider>
 

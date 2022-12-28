@@ -30,7 +30,7 @@ jobs:
 
       - name: Get latest version from npm
         id: latest-version
-        run: echo ::set-output name=version::$(npm show @vonrehberg/mgt version)
+        run: echo ::set-output name=version::$(npm show @vonrehberg.consulting/mgt version)
 
       - name: Get current package version
         id: package-version
@@ -68,7 +68,7 @@ jobs:
         run: yarn build
 
       - name: Publish npm packages
-        run: lerna exec --scope @vonrehberg/* -- "npm publish --access=public"
+        run: lerna exec --scope @vonrehberg.consulting/* -- "npm publish --access=public"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
