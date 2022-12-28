@@ -368,9 +368,7 @@ export async function findUsers(
     .api('users')
     .header('ConsistencyLevel', 'eventual')
     .count(true)
-    .search(
-      `"displayName:${encodedQuery}" OR "mail:${encodedQuery}" OR "jobTitle:${encodedQuery}" OR "officeLocation:${encodedQuery}"`
-    );
+    .search(`"displayName:${encodedQuery}" OR "mail:${encodedQuery}" OR "jobTitle:${encodedQuery}"`);
   let graphResult;
 
   if (userFilters !== '') {
