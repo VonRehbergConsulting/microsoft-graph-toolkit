@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { Providers, MgtPerson, MgtAgenda, MgtPeople, MgtTasks, IDynamicPerson } from '@microsoft/mgt';
+import { Providers, MgtPerson, MgtAgenda, MgtPeople, MgtTasks, IDynamicPerson } from '@vonrehberg/mgt';
 import RecentFileList from './RecentFileList.vue';
 
 @Component({

@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { ProviderState, Providers } from '@microsoft/mgt';
+import { ProviderState, Providers } from '@vonrehberg/mgt';
 import LoggedInPage from './components/LoggedInPage.vue';
 
 @Component({

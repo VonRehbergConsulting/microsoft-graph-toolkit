@@ -7,7 +7,7 @@
 
 import { customElement, property } from 'lit-element';
 import { Configuration } from '@azure/msal-browser';
-import { Providers, MgtBaseProvider } from '@microsoft/mgt-element';
+import { Providers, MgtBaseProvider } from '@vonrehberg/mgt-element';
 import { HttpMethod, TeamsMsal2Config, TeamsMsal2Provider } from './TeamsMsal2Provider';
 
 /**

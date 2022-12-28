@@ -1,10 +1,10 @@
 # Microsoft Graph Toolkit TeamsFx Provider
 
-[![npm](https://img.shields.io/npm/v/@microsoft/mgt-teamsfx-provider?style=for-the-badge)](https://www.npmjs.com/package/@microsoft/mgt-teamsfx-provider)
+[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-teamsfx-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-teamsfx-provider)
 
 The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection of authentication providers and UI components powered by Microsoft Graph. 
 
-The `@microsoft/mgt-teamsfx-provider` package exposes the `TeamsFxProvider` class which uses [TeamsFx](https://www.npmjs.com/package/@microsoft/teamsfx) to sign in users and acquire tokens to use with Microsoft Graph.
+The `@vonrehberg/mgt-teamsfx-provider` package exposes the `TeamsFxProvider` class which uses [TeamsFx](https://www.npmjs.com/package/@microsoft/teamsfx) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more about authentication providers, see [Providers](./providers.md).
 
@@ -13,7 +13,7 @@ To learn more about authentication providers, see [Providers](./providers.md).
 1. Install the packages
 
     ```bash
-    npm install @microsoft/mgt-element @microsoft/mgt-teamsfx-provider @microsoft/teamsfx
+    npm install @vonrehberg/mgt-element @vonrehberg/mgt-teamsfx-provider @microsoft/teamsfx
     ```
 
 1. Initialize the provider and login to get the required access token
@@ -23,8 +23,8 @@ To learn more about authentication providers, see [Providers](./providers.md).
     1. Initialize the provider inside your component.
         ```ts
             // Import the providers and credential at the top of the page
-            import {Providers} from '@microsoft/mgt-element';
-            import {TeamsFxProvider} from '@microsoft/mgt-teamsfx-provider';
+            import {Providers} from '@vonrehberg/mgt-element';
+            import {TeamsFxProvider} from '@vonrehberg/mgt-teamsfx-provider';
             import {TeamsUserCredential, TeamsUserCredentialAuthConfig} from "@microsoft/teamsfx";
 
             const authConfig: TeamsUserCredentialAuthConfig = {
@@ -52,8 +52,8 @@ To learn more about authentication providers, see [Providers](./providers.md).
 
         ```ts
             // Import the providers and credential at the top of the page
-            import {Providers} from '@microsoft/mgt-element';
-            import {TeamsFxProvider} from '@microsoft/mgt-teamsfx-provider';
+            import {Providers} from '@vonrehberg/mgt-element';
+            import {TeamsFxProvider} from '@vonrehberg/mgt-teamsfx-provider';
             import {TeamsUserCredential} from "@microsoft/teamsfx";
 
             const scope = ["User.Read"];

@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IGraph, prepScopes } from '@microsoft/mgt-element';
+import { IGraph, prepScopes } from '@vonrehberg/mgt-element';
 import { Team } from '@microsoft/microsoft-graph-types';
 
 /**

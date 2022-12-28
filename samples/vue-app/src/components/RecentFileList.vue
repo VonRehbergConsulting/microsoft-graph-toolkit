@@ -2,7 +2,7 @@
   <div class="container">
     <div v-if="!loading" class="fileList">
       <div v-for="file in files" :key="file.id" class="fileItem">
-        <a :href="file.webUrl"><img :src="file.imageUrl"/></a>
+        <a :href="file.webUrl"><img :src="file.imageUrl" /></a>
         <a class="fileName" :href="file.webUrl" :title="file.name">{{ file.name }}</a>
         <span>{{ file.size | sizer }}</span>
       </div>
@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { prepScopes, Providers } from '@microsoft/mgt';
+import { prepScopes, Providers } from '@vonrehberg/mgt';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 

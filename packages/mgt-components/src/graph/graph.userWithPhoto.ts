@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { CacheService, IGraph, prepScopes } from '@microsoft/mgt-element';
+import { CacheService, IGraph, prepScopes } from '@vonrehberg/mgt-element';
 
 import {
   CachePhoto,

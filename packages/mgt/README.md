@@ -1,10 +1,10 @@
 # Microsoft Graph Toolkit
 
-<a href="https://www.npmjs.com/package/@microsoft/mgt"><img src="https://img.shields.io/npm/v/@microsoft/mgt.svg"></a> <a href="https://github.com/microsoftgraph/msgraph-sdk-javascript"><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg"></a>
+<a href="https://www.npmjs.com/package/@vonrehberg/mgt"><img src="https://img.shields.io/npm/v/@vonrehberg/mgt.svg"></a> <a href="https://github.com/microsoftgraph/msgraph-sdk-javascript"><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg"></a>
 
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
-The `@microsoft/mgt` package brings all mgt packages together (with the exception of `@microsoft/mgt-react`) and bundles them in this one convenient package.
+The `@vonrehberg/mgt` package brings all mgt packages together (with the exception of `@vonrehberg/mgt-react`) and bundles them in this one convenient package.
 
 [View the full documentation](https://learn.microsoft.com/graph/toolkit/overview)
 
@@ -46,15 +46,15 @@ You can use the components by referencing the loader directly (via unpkg), or in
 ### Use via mgt-loader:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@vonrehberg/mgt@2/dist/bundle/mgt-loader.js"></script>
 ```
 
-> NOTE: This link will load the highest available version of @microsoft/mgt in the range `>= 2.0.0 < 3.0.0`, omitting the `@2` fragment from the url results in loading the latest version. This could result in loading a new major version and breaking the application.
+> NOTE: This link will load the highest available version of @vonrehberg/mgt in the range `>= 2.0.0 < 3.0.0`, omitting the `@2` fragment from the url results in loading the latest version. This could result in loading a new major version and breaking the application.
 
 You can then start using the components in your html page. Here is a full working example with the Msal provider:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@vonrehberg/mgt@2/dist/bundle/mgt-loader.js"></script>
 
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 
@@ -69,13 +69,13 @@ You can then start using the components in your html page. Here is a full workin
 The benefits of using MGT through NPM is that you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
 
 ```bash
-npm install @microsoft/mgt
+npm install @vonrehberg/mgt
 ```
 
 Now you can reference all components and providers at the page you are using:
 
 ```html
-<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+<script type="module" src="node_modules/@vonrehberg/mgt/dist/es6/index.js"></script>
 
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 

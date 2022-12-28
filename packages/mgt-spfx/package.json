@@ -1,5 +1,5 @@
 {
-  "name": "@microsoft/mgt-spfx",
+  "name": "@vonrehberg/mgt-spfx",
   "version": "2.0.3",
   "description": "SharePoint Framework library for Microsoft Graph Toolkit",
   "main": "lib/index.js",
@@ -27,9 +27,9 @@
     "postpublish": "npm run package"
   },
   "dependencies": {
-    "@microsoft/mgt-components": "*",
-    "@microsoft/mgt-element": "*",
-    "@microsoft/mgt-sharepoint-provider": "*",
+    "@vonrehberg/mgt-components": "*",
+    "@vonrehberg/mgt-element": "*",
+    "@vonrehberg/mgt-sharepoint-provider": "*",
     "@microsoft/sp-core-library": "1.15.2",
     "tslib": "2.3.1"
   },

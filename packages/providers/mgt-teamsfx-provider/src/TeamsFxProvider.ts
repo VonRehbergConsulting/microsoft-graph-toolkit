@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IProvider, ProviderState, createFromProvider } from '@microsoft/mgt-element';
+import { IProvider, ProviderState, createFromProvider } from '@vonrehberg/mgt-element';
 import { TeamsFx, TeamsUserCredential } from '@microsoft/teamsfx';
 
 /**

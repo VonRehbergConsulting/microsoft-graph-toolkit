@@ -6,6 +6,6 @@
  */
 
 export { MgtLibrary } from './libraries/mgt/MgtLibrary';
-export * from '@microsoft/mgt-sharepoint-provider';
-export * from '@microsoft/mgt-components';
-export * from '@microsoft/mgt-element';
+export * from '@vonrehberg/mgt-sharepoint-provider';
+export * from '@vonrehberg/mgt-components';
+export * from '@vonrehberg/mgt-element';

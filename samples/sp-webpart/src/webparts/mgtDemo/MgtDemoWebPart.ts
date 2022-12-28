@@ -9,7 +9,7 @@ import MgtDemo from './components/MgtDemo';
 import { IMgtDemoProps } from './components/IMgtDemoProps';
 
 // import the providers at the top of the page
-import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
+import { Providers, SharePointProvider } from '@vonrehberg/mgt-spfx';
 
 export interface IMgtDemoWebPartProps {
   description: string;

@@ -11,7 +11,7 @@ import {
   MgtTemplatedComponent,
   Providers,
   ProviderState
-} from '@microsoft/mgt-element';
+} from '@vonrehberg/mgt-element';
 import { DriveItem } from '@microsoft/microsoft-graph-types';
 import { customElement, html, internalProperty, property, TemplateResult } from 'lit-element';
 import { repeat } from 'lit-html/directives/repeat';

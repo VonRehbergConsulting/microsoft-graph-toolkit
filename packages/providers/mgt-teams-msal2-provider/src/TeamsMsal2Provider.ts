@@ -7,8 +7,8 @@
 
 import { AuthenticationProviderOptions } from '@microsoft/microsoft-graph-client/lib/es/IAuthenticationProviderOptions';
 import { Configuration, InteractionRequiredAuthError, SilentRequest } from '@azure/msal-browser';
-import { LoginType, ProviderState, TeamsHelper } from '@microsoft/mgt-element';
-import { Msal2Provider, PromptType } from '@microsoft/mgt-msal2-provider';
+import { LoginType, ProviderState, TeamsHelper } from '@vonrehberg/mgt-element';
+import { Msal2Provider, PromptType } from '@vonrehberg/mgt-msal2-provider';
 
 // tslint:disable-next-line: completed-docs
 declare global {

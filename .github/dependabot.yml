@@ -11,6 +11,7 @@ updates:
       interval: 'daily'
     allow:
       - dependency-name: '@microsoft/*'
+      - dependency-name: '@vonrehberg/*'
       - dependency-name: '@azure/*'
       - dependency-name: 'msal'
       - dependency-name: '@fluentui/*'

@@ -5,11 +5,11 @@
  * -------------------------------------------------------------------------------------------
  */
 
-export * from '@microsoft/mgt-element';
-export * from '@microsoft/mgt-components';
-export * from '@microsoft/mgt-msal-provider';
-export * from '@microsoft/mgt-teams-provider';
-export * from '@microsoft/mgt-proxy-provider';
-export * from '@microsoft/mgt-sharepoint-provider';
-export * from '@microsoft/mgt-msal2-provider';
-export * from '@microsoft/mgt-teams-msal2-provider';
+export * from '@vonrehberg/mgt-element';
+export * from '@vonrehberg/mgt-components';
+export * from '@vonrehberg/mgt-msal-provider';
+export * from '@vonrehberg/mgt-teams-provider';
+export * from '@vonrehberg/mgt-proxy-provider';
+export * from '@vonrehberg/mgt-sharepoint-provider';
+export * from '@vonrehberg/mgt-msal2-provider';
+export * from '@vonrehberg/mgt-teams-msal2-provider';

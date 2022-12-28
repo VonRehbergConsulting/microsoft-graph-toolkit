@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@microsoft/mgt-element';
+import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@vonrehberg/mgt-element';
 import { User } from '@microsoft/microsoft-graph-types';
 
 import { findPeople, PersonType } from './graph.people';
@@ -368,7 +368,7 @@ export async function findUsers(
     .api('users')
     .header('ConsistencyLevel', 'eventual')
     .count(true)
-    .search(`"displayName:${encodedQuery}" OR "mail:${encodedQuery}"`);
+    .search(`"displayName:${encodedQuery}" OR "mail:${encodedQuery}" OR "jobTitle:${encodedQuery}"`);
   let graphResult;
 
   if (userFilters !== '') {

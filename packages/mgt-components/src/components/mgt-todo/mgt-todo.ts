@@ -8,8 +8,8 @@
 import { customElement, html, TemplateResult } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { repeat } from 'lit-html/directives/repeat';
-import { IGraph } from '@microsoft/mgt-element';
-import { Providers, ProviderState } from '@microsoft/mgt-element';
+import { IGraph } from '@vonrehberg/mgt-element';
+import { Providers, ProviderState } from '@vonrehberg/mgt-element';
 import { getShortDateString } from '../../utils/Utils';
 import '../mgt-person/mgt-person';
 import { MgtTasksBase } from '../mgt-tasks-base/mgt-tasks-base';

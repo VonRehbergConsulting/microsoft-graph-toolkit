@@ -85,7 +85,7 @@ export const dynamicGroupId = () => html`
     }
   </style>
   <script type="module">
-    import { Providers, ProviderState } from '@microsoft/mgt';
+    import { Providers, ProviderState } from '@vonrehberg/mgt';
 
     let picker = document.getElementById('picker');
     let chosenArea = document.getElementById('chosenPeople');

@@ -37,7 +37,7 @@ jobs:
         run: yarn build
 
       - name: Publish preview packages 🚀
-        run: lerna exec --scope @microsoft/* -- "npm publish --tag next --access=public"
+        run: lerna exec --scope @vonrehberg/* -- "npm publish --tag next --access=public"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

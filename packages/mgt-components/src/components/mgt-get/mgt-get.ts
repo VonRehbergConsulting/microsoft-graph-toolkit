@@ -15,7 +15,7 @@ import {
   prepScopes,
   Providers,
   ProviderState
-} from '@microsoft/mgt-element';
+} from '@vonrehberg/mgt-element';
 
 import { getPhotoForResource } from '../../graph/graph.photos';
 import { getDocumentThumbnail } from '../../graph/graph.files';

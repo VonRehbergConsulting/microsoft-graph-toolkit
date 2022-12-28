@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IProvider, ProviderState, Graph } from '@microsoft/mgt-element';
+import { IProvider, ProviderState, Graph } from '@vonrehberg/mgt-element';
 import { ProxyGraph } from './ProxyGraph';
 
 /**

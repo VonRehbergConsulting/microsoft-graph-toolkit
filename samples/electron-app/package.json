@@ -32,9 +32,9 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
-    "@microsoft/mgt-components": "*",
-    "@microsoft/mgt-electron-provider": "*",
-    "@microsoft/mgt-element": "*",
+    "@vonrehberg/mgt-components": "*",
+    "@vonrehberg/mgt-electron-provider": "*",
+    "@vonrehberg/mgt-element": "*",
     "axios": "^0.21.0"
   }
 }

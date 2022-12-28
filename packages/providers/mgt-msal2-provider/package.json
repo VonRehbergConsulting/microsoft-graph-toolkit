@@ -1,5 +1,5 @@
 {
-  "name": "@microsoft/mgt-msal2-provider",
+  "name": "@vonrehberg/mgt-msal2-provider",
   "version": "2.0.0",
   "description": "The Microsoft Graph Toolkit Msal 2.0 Provider",
   "keywords": [
@@ -39,7 +39,7 @@
     "postpack": "cpx *.tgz ../../../artifacts"
   },
   "dependencies": {
-    "@microsoft/mgt-element": "*",
+    "@vonrehberg/mgt-element": "*",
     "@microsoft/microsoft-graph-client": "^2.2.1",
     "@azure/msal-browser": "^2.22.0"
   },

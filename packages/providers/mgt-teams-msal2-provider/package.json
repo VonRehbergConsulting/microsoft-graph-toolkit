@@ -1,5 +1,5 @@
 {
-  "name": "@microsoft/mgt-teams-msal2-provider",
+  "name": "@vonrehberg/mgt-teams-msal2-provider",
   "version": "2.0.0",
   "description": "The Microsoft Graph Toolkit Teams Msal2 Provider based on Msal2 for interactive authentication on the client. The provider also supports Single Sign-On(SSO) via a dev provided backend",
   "keywords": [
@@ -42,8 +42,8 @@
     "postpack": "cpx *.tgz ../../../artifacts"
   },
   "dependencies": {
-    "@microsoft/mgt-element": "*",
-    "@microsoft/mgt-msal2-provider": "*",
+    "@vonrehberg/mgt-element": "*",
+    "@vonrehberg/mgt-msal2-provider": "*",
     "@microsoft/microsoft-graph-client": "^2.2.1",
     "@azure/msal-browser": "^2.22.0"
   },

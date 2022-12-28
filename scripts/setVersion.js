@@ -1,4 +1,4 @@
-var child_process = require('child_process')
+var child_process = require('child_process');
 var path = require('path');
 var fs = require('fs');
 var project = require('../package.json');
@@ -25,30 +25,30 @@ const getFiles = (filter, startPath = 'packages') => {
   }
 
   return results;
-}
+};
 
 const updateMgtDependencyVersion = (packages, version) => {
   for (let package of packages) {
-    console.log(`updating package ${package} with version ${version}`)
+    console.log(`updating package ${package} with version ${version}`);
     const data = fs.readFileSync(package, 'utf8');
 
-    var result = data.replace(/"(@microsoft\/mgt.*)": "(\*)"/g, `"$1": "${version}"`);
+    var result = data.replace(/"(@vonrehberg\/mgt.*)": "(\*)"/g, `"$1": "${version}"`);
     result = result.replace(/"version": "(.*)"/g, `"version": "${version}"`);
 
     fs.writeFileSync(package, result, 'utf8');
   }
-}
+};
 
 const updateSpfxSolutionVersion = (solutions, version) => {
   for (let solution of solutions) {
-    console.log(`updating spfx solution ${solution} with version ${version}`)
+    console.log(`updating spfx solution ${solution} with version ${version}`);
     const data = fs.readFileSync(solution, 'utf8');
 
     var result = data.replace(/"version": "(.*)"/g, `"version": "${version}.0"`);
 
     fs.writeFileSync(solution, result, 'utf8');
   }
-}
+};
 
 let version = project.version;
 

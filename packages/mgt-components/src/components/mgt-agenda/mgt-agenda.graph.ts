@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { GraphPageIterator, IGraph, prepScopes } from '@microsoft/mgt-element';
+import { GraphPageIterator, IGraph, prepScopes } from '@vonrehberg/mgt-element';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 
 /**

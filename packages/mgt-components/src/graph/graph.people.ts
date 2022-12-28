@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@microsoft/mgt-element';
+import { IGraph, prepScopes, CacheItem, CacheService, CacheStore } from '@vonrehberg/mgt-element';
 import { Contact, Person, User } from '@microsoft/microsoft-graph-types';
 import { extractEmailAddress } from '../utils/Utils';
 import { schemas } from './cacheStores';

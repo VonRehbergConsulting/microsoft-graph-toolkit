@@ -7,7 +7,7 @@
 
 import { User } from '@microsoft/microsoft-graph-types';
 import { customElement, html, TemplateResult } from 'lit-element';
-import { TeamsHelper } from '@microsoft/mgt-element';
+import { TeamsHelper } from '@vonrehberg/mgt-element';
 import { classMap } from 'lit-html/directives/class-map';
 
 import { getEmailFromGraphEntity } from '../../../../graph/graph.people';

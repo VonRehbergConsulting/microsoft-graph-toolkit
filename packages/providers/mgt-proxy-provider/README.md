@@ -1,10 +1,10 @@
 # Microsoft Graph Toolkit Proxy Provider
 
-[![npm](https://img.shields.io/npm/v/@microsoft/mgt-proxy-provider?style=for-the-badge)](https://www.npmjs.com/package/@microsoft/mgt-proxy-provider)
+[![npm](https://img.shields.io/npm/v/@vonrehberg/mgt-proxy-provider?style=for-the-badge)](https://www.npmjs.com/package/@vonrehberg/mgt-proxy-provider)
 
 The [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) library is a collection of authentication providers and UI components powered by Microsoft Graph. 
 
-The `@microsoft/mgt-proxy-provider` package exposes the `ProxyProvider` class which allows a developer to proxy all calls to Microsoft Graph to their own backend. This allows all mgt-components to function properly when the authentication and calls to Microsoft Graph must be done in the backend.
+The `@vonrehberg/mgt-proxy-provider` package exposes the `ProxyProvider` class which allows a developer to proxy all calls to Microsoft Graph to their own backend. This allows all mgt-components to function properly when the authentication and calls to Microsoft Graph must be done in the backend.
 
 [See docs for full documentation of the ProxyProvider](https://learn.microsoft.com/graph/toolkit/providers/proxy)
 
@@ -13,14 +13,14 @@ The `@microsoft/mgt-proxy-provider` package exposes the `ProxyProvider` class wh
 1. Install the packages
 
     ```bash
-    npm install @microsoft/mgt-element @microsoft/mgt-proxy-provider
+    npm install @vonrehberg/mgt-element @vonrehberg/mgt-proxy-provider
     ```
 
 2. Initialize the provider in code
 
     ```ts
-    import {Providers} from '@microsoft/mgt-element';
-    import {ProxyProvider} from '@microsoft/mgt-proxy-provider';
+    import {Providers} from '@vonrehberg/mgt-element';
+    import {ProxyProvider} from '@vonrehberg/mgt-proxy-provider';
 
     // initialize the auth provider globally
     Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy");
@@ -29,7 +29,7 @@ The `@microsoft/mgt-proxy-provider` package exposes the `ProxyProvider` class wh
 3. Alternatively, initialize the provider in html (only `client-id` is required):
 
     ```html
-    <script type="module" src="../node_modules/@microsoft/mgt-proxy-provider/dist/es6/index.js" />
+    <script type="module" src="../node_modules/@vonrehberg/mgt-proxy-provider/dist/es6/index.js" />
 
     <mgt-proxy-provider graph-proxy-url="https://myurl.com/api/GraphProxy"></mgt-proxy-provider>
     ```

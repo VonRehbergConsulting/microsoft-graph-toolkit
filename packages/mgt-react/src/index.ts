@@ -8,5 +8,5 @@
 export * from './Mgt';
 export * from './MgtTemplateProps';
 export * from './generated/react';
-export * from '@microsoft/mgt-components';
-export * from '@microsoft/mgt-element';
+export * from '@vonrehberg/mgt-components';
+export * from '@vonrehberg/mgt-element';

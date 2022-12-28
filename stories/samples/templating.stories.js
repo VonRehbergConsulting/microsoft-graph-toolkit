@@ -115,7 +115,7 @@ export const AgendaEventTemplate = () => html`
             let ampm = hours >= 12 ? 'PM' : 'AM';
             hours = hours % 12;
             hours = hours ? hours : 12;
-            
+
             timeString = hours + ':' + minutesStr + ' ' + ampm;
           }
 
@@ -380,7 +380,7 @@ export const ChangeBindingSyntax = () => html`
     </template>
   </mgt-agenda>
   <script>
-    import { TemplateHelper } from '@microsoft/mgt';
+    import { TemplateHelper } from '@vonrehberg/mgt';
 
     TemplateHelper.setBindingSyntax('[[', ']]');
   </script>
@@ -396,7 +396,7 @@ export const TemplateRenderedEvent = () => html`
 </mgt-person>
 
 <script type="module">
-  import { Providers } from '@microsoft/mgt';
+  import { Providers } from '@vonrehberg/mgt';
 
 let mgtPerson = document.querySelector('mgt-person');
 

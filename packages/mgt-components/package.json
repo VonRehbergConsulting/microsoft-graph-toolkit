@@ -1,18 +1,18 @@
 {
-  "name": "@microsoft/mgt-components",
-  "version": "2.0.0",
+  "name": "@vonrehberg/mgt-components",
+  "version": "2.0.1",
   "description": "The Microsoft Graph Toolkit Components",
   "keywords": [
     "microsoft graph",
     "web components"
   ],
-  "homepage": "https://github.com/microsoftgraph/microsoft-graph-toolkit",
+  "homepage": "https://github.com/VonRehbergConsulting/microsoft-graph-toolkit",
   "bugs": {
     "url": "https://github.com/microsoftgraph/microsoft-graph-toolkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoftgraph/microsoft-graph-toolkit"
+    "url": "https://github.com/VonRehbergConsulting/microsoft-graph-toolkit"
   },
   "author": "Microsoft",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "sass:watch": "gulp watchSass --cwd ."
   },
   "dependencies": {
-    "@microsoft/mgt-element": "*",
+    "@vonrehberg/mgt-element": "*",
     "@microsoft/microsoft-graph-client": "^2.2.1",
     "@microsoft/microsoft-graph-types": "^2.0.0",
     "@microsoft/microsoft-graph-types-beta": "^0.16.0-preview",
