@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.repository == 'vonrehberg/microsoft-graph-toolkit'
+    if: github.repository == 'VonRehbergConsulting/microsoft-graph-toolkit'
     strategy:
       matrix:
         node-version: [14.x]
