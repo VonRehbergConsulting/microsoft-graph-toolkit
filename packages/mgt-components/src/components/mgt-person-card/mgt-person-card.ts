@@ -7,7 +7,13 @@
 
 import { customElement, html, internalProperty, property, TemplateResult } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { MgtTemplatedComponent, Providers, ProviderState, TeamsHelper } from '@vonrehberg.consulting/mgt-element';
+import {
+  MgtTemplatedComponent,
+  Providers,
+  ProviderState,
+  TeamsHelper,
+  BetaGraph
+} from '@vonrehberg.consulting/mgt-element';
 import { Presence, User, Person } from '@microsoft/microsoft-graph-types';
 
 import { findPeople, getEmailFromGraphEntity } from '../../graph/graph.people';
@@ -883,7 +889,7 @@ export class MgtPersonCard extends MgtTemplatedComponent {
     if (!this.personPresence && this.showPresence) {
       try {
         if (this.personDetails && this.personDetails.id) {
-          getUserPresence(graph, this.personDetails.id).then(presence => {
+          getUserPresence(BetaGraph.fromGraph(graph), this.personDetails.id).then(presence => {
             this.personPresence = presence;
           });
         } else {

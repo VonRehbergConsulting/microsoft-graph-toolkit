@@ -1,4 +1,4 @@
-import { OfficeGraphInsightString,ViewType,ResponseType,IDynamicPerson,PersonType,GroupType,UserType,PersonCardInteraction,MgtPersonConfig,AvatarSize,PersonViewType,TasksStringResource,TasksSource,TaskFilter,SelectedChannel,TodoFilter } from '@vonrehberg.consulting/mgt-components';
+import { OfficeGraphInsightString,ViewType,ResponseType,IDynamicPerson,PersonType,GroupType,UserType,PersonCardInteraction,MgtPersonConfig,BetaPresence,AvatarSize,PersonViewType,TasksStringResource,TasksSource,TaskFilter,SelectedChannel,TodoFilter } from '@vonrehberg.consulting/mgt-components';
 import { TemplateContext,ComponentMediaQuery } from '@vonrehberg.consulting/mgt-element';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import * as MicrosoftGraphBeta from '@microsoft/microsoft-graph-types-beta';
@@ -166,7 +166,7 @@ export type PersonProps = {
 	personImage?: string;
 	fetchImage?: boolean;
 	avatarType?: string;
-	personPresence?: MicrosoftGraph.Presence;
+	personPresence?: BetaPresence;
 	personCardInteraction?: PersonCardInteraction;
 	line1Property?: string;
 	line2Property?: string;

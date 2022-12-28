@@ -13,7 +13,7 @@ import { getGroupImage, getPersonImage } from '../../graph/graph.photos';
 import { getUserPresence } from '../../graph/graph.presence';
 import { getUserWithPhoto } from '../../graph/graph.userWithPhoto';
 import { findUsers, getMe, getUser } from '../../graph/graph.user';
-import { AvatarSize, IDynamicPerson, ViewType } from '../../graph/types';
+import { AvatarSize, BetaPresence, IDynamicPerson, ViewType } from '../../graph/types';
 import { Providers, ProviderState, MgtTemplatedComponent } from '@vonrehberg.consulting/mgt-element';
 import '../../styles/style-helper';
 import { getSvg, SvgIcon } from '../../utils/SvgHelper';
@@ -397,17 +397,17 @@ export class MgtPerson extends MgtTemplatedComponent {
   /**
    * Gets or sets presence of person
    *
-   * @type {MicrosoftGraph.Presence}
+   * @type {BetaPresence}
    * @memberof MgtPerson
    */
   @property({
     attribute: 'person-presence',
     type: Object
   })
-  public get personPresence(): Presence {
+  public get personPresence(): BetaPresence {
     return this._personPresence || this._fetchedPresence;
   }
-  public set personPresence(value: Presence) {
+  public set personPresence(value: BetaPresence) {
     if (value === this._personPresence) {
       return;
     }
@@ -517,7 +517,7 @@ export class MgtPerson extends MgtTemplatedComponent {
   public view: ViewType | PersonViewType;
 
   @internalProperty() private _fetchedImage: string;
-  @internalProperty() private _fetchedPresence: Presence;
+  @internalProperty() private _fetchedPresence: BetaPresence;
   @internalProperty() private _isInvalidImageSrc: boolean;
   @internalProperty() private _personCardShouldRender: boolean;
 
@@ -526,7 +526,7 @@ export class MgtPerson extends MgtTemplatedComponent {
   private _fallbackDetails: IDynamicPerson;
   private _personAvatarBg: string;
   private _personImage: string;
-  private _personPresence: Presence;
+  private _personPresence: BetaPresence;
   private _personQuery: string;
   private _userId: string;
   private _avatarType: string;
@@ -703,7 +703,7 @@ export class MgtPerson extends MgtTemplatedComponent {
    * @param
    * @memberof MgtPersonCard
    */
-  protected renderPresence(presence: Presence): TemplateResult {
+  protected renderPresence(presence: BetaPresence): TemplateResult {
     if (!this.showPresence || !presence) {
       return html``;
     }
@@ -795,8 +795,12 @@ export class MgtPerson extends MgtTemplatedComponent {
       `;
     }
 
+    const activity = presence.statusMessage?.message?.content
+      ? `${presence.activity} - ${presence.statusMessage?.message?.content}`
+      : presence.activity;
+
     return html`
-      <div class="user-presence" title=${presence.activity} aria-label=${presence.activity} role="img">
+      <div class="user-presence" title=${activity} aria-label=${activity} role="img">
         ${iconHtml}
       </div>
     `;
@@ -809,7 +813,7 @@ export class MgtPerson extends MgtTemplatedComponent {
    * @param
    * @memberof MgtPersonCard
    */
-  protected renderAvatar(personDetailsInternal: IDynamicPerson, image: string, presence: Presence): TemplateResult {
+  protected renderAvatar(personDetailsInternal: IDynamicPerson, image: string, presence: BetaPresence): TemplateResult {
     const hasInitials = !image || this._isInvalidImageSrc || this._avatarType === avatarType.initials;
     const imageClasses = {
       initials: hasInitials,
@@ -868,7 +872,7 @@ export class MgtPerson extends MgtTemplatedComponent {
    * @returns {TemplateResult}
    * @memberof MgtPerson
    */
-  protected renderDetails(personProps: IDynamicPerson, presence?: Presence): TemplateResult {
+  protected renderDetails(personProps: IDynamicPerson, presence?: BetaPresence): TemplateResult {
     if (!personProps || this.view === ViewType.image || this.view === PersonViewType.avatar) {
       return html``;
     }
@@ -961,7 +965,7 @@ export class MgtPerson extends MgtTemplatedComponent {
     anchor: TemplateResult,
     personDetails: IDynamicPerson,
     image: string,
-    presence: Presence
+    presence: BetaPresence
   ): TemplateResult {
     const flyoutContent = this._personCardShouldRender
       ? html`
@@ -985,7 +989,7 @@ export class MgtPerson extends MgtTemplatedComponent {
    * @returns {TemplateResult}
    * @memberof MgtPerson
    */
-  protected renderFlyoutContent(personDetails: IDynamicPerson, image: string, presence: Presence): TemplateResult {
+  protected renderFlyoutContent(personDetails: IDynamicPerson, image: string, presence: BetaPresence): TemplateResult {
     return (
       this.renderTemplate('person-card', { person: personDetails, personImage: image }) ||
       html`
@@ -1084,7 +1088,7 @@ export class MgtPerson extends MgtTemplatedComponent {
     }
 
     // populate presence
-    const defaultPresence: Presence = {
+    const defaultPresence: BetaPresence = {
       activity: 'Offline',
       availability: 'Offline',
       id: null

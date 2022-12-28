@@ -1,6 +1,6 @@
 {
   "name": "@vonrehberg.consulting/mgt-spfx",
-  "version": "2.0.3",
+  "version": "2.9.3",
   "description": "SharePoint Framework library for Microsoft Graph Toolkit",
   "main": "lib/index.js",
   "keywords": [

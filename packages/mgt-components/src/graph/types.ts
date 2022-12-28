@@ -62,3 +62,11 @@ export enum ViewType {
    */
   threelines = 5
 }
+
+export interface BetaPresence extends MicrosoftGraph.Presence {
+  statusMessage?: {
+    message?: {
+      content: string;
+    };
+  };
+}
