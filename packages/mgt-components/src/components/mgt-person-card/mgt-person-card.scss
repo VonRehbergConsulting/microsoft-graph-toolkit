@@ -242,6 +242,11 @@ $person-card-nav-back-arrow-hover-color: var(--person-card-nav-back-arrow-hover-
     }
   }
 
+  .presence-message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .sections {
     .section {
       padding: 14px 0;

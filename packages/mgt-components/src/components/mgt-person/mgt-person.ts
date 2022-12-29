@@ -795,12 +795,8 @@ export class MgtPerson extends MgtTemplatedComponent {
       `;
     }
 
-    const activity = presence.statusMessage?.message?.content
-      ? `${presence.activity} - ${presence.statusMessage?.message?.content}`
-      : presence.activity;
-
     return html`
-      <div class="user-presence" title=${activity} aria-label=${activity} role="img">
+      <div class="user-presence" title=${presence.activity} aria-label=${presence.activity} role="img">
         ${iconHtml}
       </div>
     `;
@@ -881,6 +877,7 @@ export class MgtPerson extends MgtTemplatedComponent {
     if (presence) {
       person.presenceActivity = presence?.activity;
       person.presenceAvailability = presence?.availability;
+      person.presenceMessage = presence?.statusMessage?.message?.content;
     }
 
     const details: TemplateResult[] = [];

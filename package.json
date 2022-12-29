@@ -1,7 +1,7 @@
 {
   "name": "root",
   "private": true,
-  "version": "2.9.3",
+  "version": "2.10.0",
   "workspaces": [
     "packages/*",
     "packages/providers/*",
@@ -27,8 +27,8 @@
     "pack": "shx rm -rf artifacts/*.tgz && lerna exec --stream --scope @vonrehberg.consulting/* -- npm pack",
     "prepare": "lerna bootstrap --force-local",
     "sass": "lerna run sass --scope @vonrehberg.consulting/*",
-    "serve": "web-dev-server --port 3000 --node-resolve --open --watch --compatibility none --app-index index.html",
-    "serve:https": "web-dev-server --http2 --port 3000 --node-resolve --open --watch --compatibility none --app-index index.html",
+    "serve": "web-dev-server --port 4422 --node-resolve --open --watch --compatibility none --app-index index.html",
+    "serve:https": "web-dev-server --http2 --port 4422 --node-resolve --open --watch --compatibility none --app-index index.html",
     "start": "npm-run-all prettier:check watch:serve",
     "start:storybook": "npm-run-all storybook:dev storybook:watch",
     "start:https": "npm-run-all prettier:check build:esm watch:serve:https",

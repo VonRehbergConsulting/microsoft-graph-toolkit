@@ -22,6 +22,8 @@ export type IDynamicPerson = (MicrosoftGraph.User | MicrosoftGraph.Person | Micr
    * @type {string}
    */
   personImage?: string;
+
+  presenceMessage?: string;
 };
 
 /**

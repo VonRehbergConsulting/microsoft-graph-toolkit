@@ -535,7 +535,24 @@ export class MgtPersonCard extends MgtTemplatedComponent {
         .view=${ViewType.threelines}
         .line2Property=${'jobTitle'}
         .line3Property=${'department'}
-      ></mgt-person>
+      >
+        <template data-type="line1">
+          <div>
+            {{person.displayName}}
+          </div>
+        </template>
+        <template data-type="line2">
+          <div>
+          {{person.mail}}
+          </div>
+        </template>
+        <template data-type="line3">
+          <div>
+          {{person.jobTitle}}
+          <div data-if="person.presenceMessage" class="presence-message">{{person.presenceMessage}}</div>
+          </div>
+        </template>
+      </mgt-person>
     `;
   }
 
