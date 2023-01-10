@@ -549,8 +549,10 @@ export class MgtPersonCard extends MgtTemplatedComponent {
         <template data-type="line3">
           <div>
           {{person.jobTitle}}
-          <div data-if="person.presenceMessage" class="presence-message">{{person.presenceMessage}}</div>
           </div>
+        </template>
+        <template data-type="presence">
+          <div data-if="person.presenceMessage" class="presence-message">Status Message: {{person.presenceMessage}}</div>
         </template>
       </mgt-person>
     `;

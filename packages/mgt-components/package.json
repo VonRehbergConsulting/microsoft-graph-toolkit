@@ -36,11 +36,11 @@
     "sass:watch": "gulp watchSass --cwd ."
   },
   "dependencies": {
-    "@vonrehberg.consulting/mgt-element": "*",
+    "@fluentui/web-components": "0.22.1",
     "@microsoft/microsoft-graph-client": "^2.2.1",
     "@microsoft/microsoft-graph-types": "^2.0.0",
     "@microsoft/microsoft-graph-types-beta": "^0.16.0-preview",
-    "@fluentui/web-components": "0.22.1",
+    "@vonrehberg.consulting/mgt-element": "*",
     "office-ui-fabric-core": "11.0.0"
   },
   "publishConfig": {

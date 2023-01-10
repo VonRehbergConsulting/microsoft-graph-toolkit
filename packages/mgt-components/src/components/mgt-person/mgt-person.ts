@@ -592,6 +592,11 @@ export class MgtPerson extends MgtTemplatedComponent {
       `;
     }
 
+      if (this.hasTemplate('presence')) {
+        const template = this.renderTemplate('presence', { person });
+        personTemplate = html`${personTemplate}${template}`;
+      }
+
     if (this.personCardInteraction !== PersonCardInteraction.none) {
       personTemplate = this.renderFlyout(personTemplate, person, image, presence);
     }

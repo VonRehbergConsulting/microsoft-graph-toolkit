@@ -43,13 +43,13 @@ const getIsPresenceCacheEnabled = (): boolean =>
 export async function getUserPresence(graph: IGraph, userId?: string): Promise<Presence> {
   let cache: CacheStore<CachePresence>;
 
-  if (getIsPresenceCacheEnabled()) {
-    cache = CacheService.getCache(schemas.presence, schemas.presence.stores.presence);
-    const presence = await cache.getValue(userId || 'me');
-    if (presence && getPresenceInvalidationTime() > Date.now() - presence.timeCached) {
-      return JSON.parse(presence.presence);
-    }
-  }
+  // if (getIsPresenceCacheEnabled()) {
+  //   cache = CacheService.getCache(schemas.presence, schemas.presence.stores.presence);
+  //   const presence = await cache.getValue(userId || 'me');
+  //   if (presence && getPresenceInvalidationTime() > Date.now() - presence.timeCached) {
+  //     return JSON.parse(presence.presence);
+  //   }
+  // }
 
   const scopes = userId ? ['presence.read.all'] : ['presence.read'];
   const resource = userId ? `/users/${userId}/presence` : '/me/presence';
@@ -58,9 +58,9 @@ export async function getUserPresence(graph: IGraph, userId?: string): Promise<P
     .api(resource)
     .middlewareOptions(prepScopes(...scopes))
     .get();
-  if (getIsPresenceCacheEnabled()) {
-    cache.putValue(userId || 'me', { presence: JSON.stringify(result) });
-  }
+  // if (getIsPresenceCacheEnabled()) {
+  //   cache.putValue(userId || 'me', { presence: JSON.stringify(result) });
+  // }
 
   return result;
 }
